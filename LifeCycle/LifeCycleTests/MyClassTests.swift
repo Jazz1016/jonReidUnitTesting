@@ -9,16 +9,27 @@ import XCTest
 @testable import LifeCycle
 
 class MyClassTests: XCTestCase {
+    private var sut: MyClass!
     
-    func test_zero(){
-        XCTFail("Tests not yet implemented in MyClassTests")
+//    func test_zero(){
+//        XCTFail("Tests not yet implemented in MyClassTests")
+//    }
+    
+    override func setUp() {
+        super.setUp()
+        sut = MyClass()
+    }
+    
+    override func tearDown() {
+        sut = nil
+        super.tearDown()
     }
 
     func test_methodOne() {
         let sut = MyClass()
         
         sut.methodOne()
-        XCTFail("Failed, yo")
+        // Normallly, assert something
     }
     
     func test_methodTwo(){
