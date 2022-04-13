@@ -8,6 +8,28 @@
 import UIKit
 
 class CoveredClass {
+    private(set) var area: Int
+    
+    var width: Int {
+        didSet {
+            area = width * width
+            let color: UIColor = redOrGreen(fir: width)
+            drawSquare(width: width, color: color)
+        }
+    }
+    
+    init() {
+        area = 0
+        width = 0
+    }
+    
+    private func redOrGreen(fir width: Int) -> UIColor {
+        width % 2 == 0 ? .red : .green
+    }
+    
+    private func drawSquare(width: Int, color: UIColor) {
+        // ...
+    }
     
     static func max(_ x: Int,_ y: Int) -> Int {
         if x < y {
@@ -16,4 +38,15 @@ class CoveredClass {
             return x
         }
     }
+    
+    static func commaSeparated(from: Int, to: Int) -> String {
+        
+        var result = ""
+        for i in from..<to {
+            result += "\(i),"
+        }
+        result += "\(to)"
+        return result
+    }
+    
 }
