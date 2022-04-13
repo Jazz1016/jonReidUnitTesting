@@ -6,7 +6,6 @@
 //
 
 import XCTest
-import UIKit
 @testable import LoadViewControllers
 
 class StoryboardBasedViewControllerTests: XCTestCase {

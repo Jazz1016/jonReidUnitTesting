@@ -18,6 +18,9 @@
 		0DDC7D91280744E400405108 /* LoadViewControllersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDC7D90280744E400405108 /* LoadViewControllersUITestsLaunchTests.swift */; };
 		0DDC7D9E2807458200405108 /* StoryboardBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDC7D9D2807458200405108 /* StoryboardBasedViewController.swift */; };
 		0DDC7DA02807481800405108 /* StoryboardBasedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDC7D9F2807481800405108 /* StoryboardBasedViewControllerTests.swift */; };
+		0DDC7DA328074C1200405108 /* XIBBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDC7DA128074C1200405108 /* XIBBasedViewController.swift */; };
+		0DDC7DA428074C1200405108 /* XIBBasedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DDC7DA228074C1200405108 /* XIBBasedViewController.xib */; };
+		0DDC7DA628074CD400405108 /* XIBBasedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDC7DA528074CD400405108 /* XIBBasedViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		0DDC7D90280744E400405108 /* LoadViewControllersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewControllersUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0DDC7D9D2807458200405108 /* StoryboardBasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardBasedViewController.swift; sourceTree = "<group>"; };
 		0DDC7D9F2807481800405108 /* StoryboardBasedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardBasedViewControllerTests.swift; sourceTree = "<group>"; };
+		0DDC7DA128074C1200405108 /* XIBBasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBBasedViewController.swift; sourceTree = "<group>"; };
+		0DDC7DA228074C1200405108 /* XIBBasedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XIBBasedViewController.xib; sourceTree = "<group>"; };
+		0DDC7DA528074CD400405108 /* XIBBasedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBBasedViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,8 @@
 				0DDC7D78280744E400405108 /* LaunchScreen.storyboard */,
 				0DDC7D7B280744E400405108 /* Info.plist */,
 				0DDC7D9D2807458200405108 /* StoryboardBasedViewController.swift */,
+				0DDC7DA128074C1200405108 /* XIBBasedViewController.swift */,
+				0DDC7DA228074C1200405108 /* XIBBasedViewController.xib */,
 			);
 			path = LoadViewControllers;
 			sourceTree = "<group>";
@@ -120,6 +128,7 @@
 			children = (
 				0DDC7D84280744E400405108 /* LoadViewControllersTests.swift */,
 				0DDC7D9F2807481800405108 /* StoryboardBasedViewControllerTests.swift */,
+				0DDC7DA528074CD400405108 /* XIBBasedViewControllerTests.swift */,
 			);
 			path = LoadViewControllersTests;
 			sourceTree = "<group>";
@@ -237,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DDC7DA428074C1200405108 /* XIBBasedViewController.xib in Resources */,
 				0DDC7D7A280744E400405108 /* LaunchScreen.storyboard in Resources */,
 				0DDC7D77280744E400405108 /* Assets.xcassets in Resources */,
 				0DDC7D75280744E200405108 /* Main.storyboard in Resources */,
@@ -265,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DDC7D72280744E200405108 /* ViewController.swift in Sources */,
+				0DDC7DA328074C1200405108 /* XIBBasedViewController.swift in Sources */,
 				0DDC7D9E2807458200405108 /* StoryboardBasedViewController.swift in Sources */,
 				0DDC7D6E280744E200405108 /* AppDelegate.swift in Sources */,
 				0DDC7D70280744E200405108 /* SceneDelegate.swift in Sources */,
@@ -277,6 +288,7 @@
 			files = (
 				0DDC7D85280744E400405108 /* LoadViewControllersTests.swift in Sources */,
 				0DDC7DA02807481800405108 /* StoryboardBasedViewControllerTests.swift in Sources */,
+				0DDC7DA628074CD400405108 /* XIBBasedViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
