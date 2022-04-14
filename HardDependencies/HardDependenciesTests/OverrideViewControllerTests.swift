@@ -6,11 +6,25 @@
 //
 
 import XCTest
+@testable import HardDependencies
 
-class OverrideViewController: XCTestCase {
+class OverrideViewControllerTests: XCTestCase {
+    
+    private class TestableOverrideViewController: OverrideViewController {
+        override func analytics() -> Analytics { Analytics() }
+    }
 
     func test_zero() {
         
+    }
+    
+    func test_viewDidAppear() {
+        let sut = TestableOverrideViewController()
+        sut.loadViewIfNeeded()
+        
+        sut.viewDidAppear(false)
+        
+        //Normally, assert something
     }
 
 }
