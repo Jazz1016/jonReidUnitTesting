@@ -22,7 +22,7 @@ class ClosurePropertyViewControllerTests: XCTestCase {
         sut.makeAnalytics = { Analytics() }
         sut.loadViewIfNeeded()
         
-//        sut.viewDidAppear(false)
+        sut.viewDidAppear(false)
         
         //Normally, Assert Something
     }
