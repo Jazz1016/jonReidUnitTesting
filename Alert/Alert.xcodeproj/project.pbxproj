@@ -15,6 +15,7 @@
 		0DEB28A0280BAD97004B71C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DEB289E280BAD97004B71C2 /* LaunchScreen.storyboard */; };
 		0DEB28B5280BAD98004B71C2 /* AlertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEB28B4280BAD98004B71C2 /* AlertUITests.swift */; };
 		0DEB28B7280BAD98004B71C2 /* AlertUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEB28B6280BAD98004B71C2 /* AlertUITestsLaunchTests.swift */; };
+		0DEB28CD280C9BA9004B71C2 /* ViewControlllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEB28CC280C9BA9004B71C2 /* ViewControlllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0DEB28C7280BB484004B71C2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0DEB2890280BAD96004B71C2 /* Alert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DEB2893280BAD96004B71C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +60,9 @@
 		0DEB28B0280BAD98004B71C2 /* AlertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DEB28B4280BAD98004B71C2 /* AlertUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUITests.swift; sourceTree = "<group>"; };
 		0DEB28B6280BAD98004B71C2 /* AlertUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0DEB28C5280BB433004B71C2 /* ViewControllerPresentationSpy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ViewControllerPresentationSpy.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/SwiftSampleViewControllerPresentationSpy-gqfxmkoqifkawtfnceveyjlnehsu/Build/Products/Debug-iphoneos/ViewControllerPresentationSpy.framework"; sourceTree = "<group>"; };
+		0DEB28CB280C9BA8004B71C2 /* AlertTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlertTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		0DEB28CC280C9BA9004B71C2 /* ViewControlllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControlllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +127,9 @@
 		0DEB28A9280BAD97004B71C2 /* AlertTests */ = {
 			isa = PBXGroup;
 			children = (
+				0DEB28C5280BB433004B71C2 /* ViewControllerPresentationSpy.framework */,
+				0DEB28CC280C9BA9004B71C2 /* ViewControlllerTests.swift */,
+				0DEB28CB280C9BA8004B71C2 /* AlertTests-Bridging-Header.h */,
 			);
 			path = AlertTests;
 			sourceTree = "<group>";
@@ -151,6 +170,7 @@
 				0DEB28A2280BAD97004B71C2 /* Sources */,
 				0DEB28A3280BAD97004B71C2 /* Frameworks */,
 				0DEB28A4280BAD97004B71C2 /* Resources */,
+				0DEB28C7280BB484004B71C2 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -195,6 +215,7 @@
 					};
 					0DEB28A5280BAD97004B71C2 = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 						TestTargetID = 0DEB288F280BAD96004B71C2;
 					};
 					0DEB28AF280BAD98004B71C2 = {
@@ -265,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DEB28CD280C9BA9004B71C2 /* ViewControlllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +511,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5L2PGYP5GB;
@@ -503,6 +526,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.james.AlertTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "AlertTests/AlertTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alert.app/Alert";
@@ -514,6 +539,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5L2PGYP5GB;
@@ -528,6 +554,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.james.AlertTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "AlertTests/AlertTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alert.app/Alert";
