@@ -13,9 +13,10 @@
 		0DEB2859280BA849004B71C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DEB2857280BA849004B71C2 /* Main.storyboard */; };
 		0DEB285B280BA84A004B71C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DEB285A280BA84A004B71C2 /* Assets.xcassets */; };
 		0DEB285E280BA84A004B71C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DEB285C280BA84A004B71C2 /* LaunchScreen.storyboard */; };
-		0DEB2869280BA84A004B71C2 /* ButtonTapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEB2868280BA84A004B71C2 /* ButtonTapTests.swift */; };
 		0DEB2873280BA84A004B71C2 /* ButtonTapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEB2872280BA84A004B71C2 /* ButtonTapUITests.swift */; };
 		0DEB2875280BA84A004B71C2 /* ButtonTapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEB2874280BA84A004B71C2 /* ButtonTapUITestsLaunchTests.swift */; };
+		0DEB2882280BA943004B71C2 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEB2881280BA943004B71C2 /* ViewControllerTests.swift */; };
+		0DEB2886280BABAD004B71C2 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEB2885280BABAD004B71C2 /* TestHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +46,11 @@
 		0DEB285D280BA84A004B71C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DEB285F280BA84A004B71C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DEB2864280BA84A004B71C2 /* ButtonTapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonTapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DEB2868280BA84A004B71C2 /* ButtonTapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTapTests.swift; sourceTree = "<group>"; };
 		0DEB286E280BA84A004B71C2 /* ButtonTapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonTapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DEB2872280BA84A004B71C2 /* ButtonTapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTapUITests.swift; sourceTree = "<group>"; };
 		0DEB2874280BA84A004B71C2 /* ButtonTapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTapUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0DEB2881280BA943004B71C2 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		0DEB2885280BABAD004B71C2 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +115,8 @@
 		0DEB2867280BA84A004B71C2 /* ButtonTapTests */ = {
 			isa = PBXGroup;
 			children = (
-				0DEB2868280BA84A004B71C2 /* ButtonTapTests.swift */,
+				0DEB2881280BA943004B71C2 /* ViewControllerTests.swift */,
+				0DEB2885280BABAD004B71C2 /* TestHelpers.swift */,
 			);
 			path = ButtonTapTests;
 			sourceTree = "<group>";
@@ -268,7 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DEB2869280BA84A004B71C2 /* ButtonTapTests.swift in Sources */,
+				0DEB2882280BA943004B71C2 /* ViewControllerTests.swift in Sources */,
+				0DEB2886280BABAD004B71C2 /* TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
