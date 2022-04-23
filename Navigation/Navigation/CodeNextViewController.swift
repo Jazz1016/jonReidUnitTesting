@@ -25,6 +25,9 @@ class CodeNextViewController: UIViewController {
         view.backgroundColor = .white
         view.addSubview(label)
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.backgroundColor = .blue
+        activateEqualConstraints(.centerX, fromItem: label, toItem: view)
+        activateEqualConstraints(.centerY, fromItem: label, toItem: view)
     }
     
     private func activateEqualConstraints(

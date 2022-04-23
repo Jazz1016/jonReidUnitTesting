@@ -11,18 +11,113 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="eGJ-do-JF6">
+                                <rect key="frame" x="174" y="264" width="108.5" height="223"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tR-Xj-UwR">
+                                        <rect key="frame" x="0.0" y="0.0" width="108.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Code Push"/>
+                                        <connections>
+                                            <action selector="pushNextViewController" destination="BYZ-38-t0r" eventType="touchUpInside" id="tBv-HQ-0xB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddo-il-Uqy">
+                                        <rect key="frame" x="0.0" y="64" width="108.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Code Modal"/>
+                                        <connections>
+                                            <action selector="presentModalNextViewController" destination="BYZ-38-t0r" eventType="touchUpInside" id="BpS-Fv-LLg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8t-7X-Fit">
+                                        <rect key="frame" x="0.0" y="128" width="108.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Segue Push"/>
+                                        <connections>
+                                            <segue destination="wjn-w7-GKg" kind="show" identifier="pushNext" id="Iqi-Y6-UUa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLy-LE-NkX">
+                                        <rect key="frame" x="0.0" y="192" width="108.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Segue Modal"/>
+                                        <connections>
+                                            <segue destination="wjn-w7-GKg" kind="presentation" identifier="modalNext" id="jiX-Wp-TB7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eGJ-do-JF6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9k7-mu-7d7"/>
+                            <constraint firstItem="eGJ-do-JF6" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="PUn-Oi-cbp"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="98r-39-qqc"/>
+                    <connections>
+                        <outlet property="codeModalButton" destination="Ddo-il-Uqy" id="SEP-zv-DCN"/>
+                        <outlet property="codePushButton" destination="7tR-Xj-UwR" id="48X-MV-Zgl"/>
+                        <outlet property="segueModalButton" destination="lLy-LE-NkX" id="xTf-jf-vte"/>
+                        <outlet property="seguePushButton" destination="c8t-7X-Fit" id="Sao-wr-GVN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="971.01449275362324" y="105.80357142857143"/>
+        </scene>
+        <!--Segue Next View Controller-->
+        <scene sceneID="Cjr-Sm-b4y">
+            <objects>
+                <viewController storyboardIdentifier="SegueNextViewController" id="wjn-w7-GKg" customClass="SegueNextViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pfc-lW-DTu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhb-ak-JAk">
+                                <rect key="frame" x="186" y="433" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dNf-9K-4U2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rhb-ak-JAk" firstAttribute="centerY" secondItem="dNf-9K-4U2" secondAttribute="centerY" id="WM1-cn-iD4"/>
+                            <constraint firstItem="rhb-ak-JAk" firstAttribute="centerX" secondItem="dNf-9K-4U2" secondAttribute="centerX" id="xgV-LF-BYM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0tY-Vm-ToA"/>
+                    <connections>
+                        <outlet property="label" destination="rhb-ak-JAk" id="2KF-uB-w05"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G8V-hY-e8i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1800" y="379"/>
+        </scene>
+        <!--Code Next View Controller-->
+        <scene sceneID="jae-2b-8cg">
+            <objects>
+                <viewController storyboardIdentifier="CodeNextViewController" id="ofb-Ol-cKw" customClass="CodeNextViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SYc-YT-6Kx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1lf-BY-5FU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EwX-Hp-ZOy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1801" y="-320"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="R7r-Km-itC">
@@ -43,6 +138,9 @@
             <point key="canvasLocation" x="103" y="106"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jiX-Wp-TB7"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
