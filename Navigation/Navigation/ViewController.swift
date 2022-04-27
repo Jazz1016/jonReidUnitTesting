@@ -16,18 +16,22 @@ class ViewController: UIViewController {
     @IBOutlet private(set) var segueModalButton: UIButton!
     
     //MARK: Navigation Actions
-    @IBAction private func pushNextViewController(){
+    @IBAction private func pushNextViewController() {
         let nextVC = CodeNextViewController(labelText: "Pushed from code")
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
-    @IBAction private func presentModalNextViewController(){
+    @IBAction private func presentModalNextViewController() {
         let nextVC = CodeNextViewController(labelText: "Modal from code")
         self.present(nextVC, animated: true)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    deinit {
+        print(">> ViewController.deinit")
     }
     
     //MARK: Segues

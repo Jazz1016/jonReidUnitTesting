@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D1FAF8B281249CC000E94B8 /* CodeNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1FAF8A281249CC000E94B8 /* CodeNextViewController.swift */; };
+		0D2B728F2818C47A006FA796 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B728E2818C47A006FA796 /* NavigationController.swift */; };
 		0D6FBC6628136EB2001A25BC /* SegueNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6FBC6528136EB2001A25BC /* SegueNextViewController.swift */; };
 		0D6FBC682813825C001A25BC /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6FBC672813825C001A25BC /* ViewControllerTests.swift */; };
 		0D6FBC6A281382D5001A25BC /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6FBC69281382D5001A25BC /* TestHelpers.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		0D1FAF8A281249CC000E94B8 /* CodeNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeNextViewController.swift; sourceTree = "<group>"; };
+		0D2B728E2818C47A006FA796 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		0D6FBC6528136EB2001A25BC /* SegueNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueNextViewController.swift; sourceTree = "<group>"; };
 		0D6FBC672813825C001A25BC /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		0D6FBC69281382D5001A25BC /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				0DEB2958280CB8E2004B71C2 /* NavigationTests.swift */,
 				0D6FBC672813825C001A25BC /* ViewControllerTests.swift */,
 				0D6FBC69281382D5001A25BC /* TestHelpers.swift */,
+				0D2B728E2818C47A006FA796 /* NavigationController.swift */,
 			);
 			path = NavigationTests;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D6FBC682813825C001A25BC /* ViewControllerTests.swift in Sources */,
+				0D2B728F2818C47A006FA796 /* NavigationController.swift in Sources */,
 				0DEB2959280CB8E2004B71C2 /* NavigationTests.swift in Sources */,
 				0D6FBC6A281382D5001A25BC /* TestHelpers.swift in Sources */,
 			);

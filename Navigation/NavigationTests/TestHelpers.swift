@@ -17,3 +17,7 @@ func tap(_ button: UIBarButtonItem) {
     print(">> A bar button was tapped")
     button.target?.perform(button.action, with: nil)
 }
+
+func executeRunLoop() {
+    RunLoop.current.run(until: Date())
+}
