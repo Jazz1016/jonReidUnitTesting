@@ -6,12 +6,13 @@
 //
 
 import XCTest
+import ViewControllerPresentationSpy
 @testable import Navigation
 
 class NavigationTests: XCTestCase {
     
-    func test_zero(){
-        
+    func test_zero() {
+        XCTFail("TEST ZERO SUCCESS")
     }
     
 }
