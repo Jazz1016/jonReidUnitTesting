@@ -18,11 +18,11 @@ class ViewController: UIViewController {
     @IBAction private func buttonTap(_ sender: Any) {
         let alert = UIAlertController(
             title: "Do the Thing?",
-            message: "Let us know wif you want to do the thing",
+            message: "Let us know if you want to do the thing",
             preferredStyle: .alert)
         let cancelAction = UIAlertAction(
             title: "Cancel",
-            style: .default) { _ in
+            style: .cancel) { _ in
                 print("cancel")
             }
         let okAction = UIAlertAction(
