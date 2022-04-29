@@ -19,4 +19,8 @@ class SegueNextViewController: UIViewController {
         label.backgroundColor = .blue
     }
     
+    deinit {
+        print(">> SegueNextViewController.deinit")
+    }
+    
 }

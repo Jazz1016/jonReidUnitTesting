@@ -21,3 +21,9 @@ func tap(_ button: UIBarButtonItem) {
 func executeRunLoop() {
     RunLoop.current.run(until: Date())
 }
+
+func putInWindow(_ vc: UIViewController) {
+    let window = UIWindow()
+    window.rootViewController = vc
+    window.isHidden = false
+}

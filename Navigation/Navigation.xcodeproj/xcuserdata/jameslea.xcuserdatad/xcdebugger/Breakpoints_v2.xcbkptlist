@@ -30,10 +30,8 @@
             filePath = "NavigationTests/ViewControllerTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "test_codeTappingPushButton_shouldPushCodeNextViewController()"
-            landmarkType = "7">
+            startingLineNumber = "94"
+            endingLineNumber = "94">
             <Locations>
                <Location
                   uuid = "8E33C3D5-4250-41D6-912C-9B71D29B5094 - 9c475be33888159a"
@@ -95,7 +93,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
             endingLineNumber = "41"
-            landmarkName = "test_codeTappingPushButton_shouldPushCodeNextViewController()"
+            landmarkName = "present(_:animated:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -109,26 +107,26 @@
             filePath = "NavigationTests/ViewControllerTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "test_codeTappingPushButton_shouldPushCodeNextViewController()"
-            landmarkType = "7">
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "TestableViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D2E3A2A2-72C4-4132-96A5-3EAF62403286"
+            uuid = "B9A48F50-37CA-43A4-AE17-A7D89868EB98"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Navigation/ViewController.swift"
+            filePath = "NavigationTests/ViewControllerTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "ViewController"
-            landmarkType = "3">
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "test_tappingSeguePushButton_shouldShowSegueNextViewController()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
