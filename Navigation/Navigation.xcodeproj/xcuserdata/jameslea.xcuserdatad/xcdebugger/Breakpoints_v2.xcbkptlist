@@ -30,8 +30,8 @@
             filePath = "NavigationTests/ViewControllerTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94">
+            startingLineNumber = "99"
+            endingLineNumber = "99">
             <Locations>
                <Location
                   uuid = "8E33C3D5-4250-41D6-912C-9B71D29B5094 - 9c475be33888159a"
@@ -116,8 +116,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B9A48F50-37CA-43A4-AE17-A7D89868EB98"
-            shouldBeEnabled = "Yes"
+            uuid = "78B77CB6-DEF4-474D-ABF5-0C3468809E81"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NavigationTests/ViewControllerTests.swift"
@@ -126,6 +126,70 @@
             startingLineNumber = "81"
             endingLineNumber = "81"
             landmarkName = "test_tappingSeguePushButton_shouldShowSegueNextViewController()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "78B77CB6-DEF4-474D-ABF5-0C3468809E81 - f3807a22657d4f7f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NavigationTests.ViewControllerTests.test_tappingSeguePushButton_shouldShowSegueNextViewController() -&gt; ()"
+                  moduleName = "NavigationTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/jonReidUnitTesting/Navigation/NavigationTests/ViewControllerTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "564">
+               </Location>
+               <Location
+                  uuid = "78B77CB6-DEF4-474D-ABF5-0C3468809E81 - f3807a22657d4f7f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NavigationTests.ViewControllerTests.test_tappingSeguePushButton_shouldShowSegueNextViewController() -&gt; ()"
+                  moduleName = "NavigationTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jameslea/Desktop/Code/Swift/jonReidUnitTesting/Navigation/NavigationTests/ViewControllerTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "412">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E7BCB440-EAC3-4C31-BD22-BAB65FD1F945"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NavigationTests/ViewControllerTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "test_tappingSeguePushButton_shouldShowSegueNextViewController()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "977AD079-3774-4804-AA13-B2502CF9D903"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Navigation/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "presentModalNextViewController()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
