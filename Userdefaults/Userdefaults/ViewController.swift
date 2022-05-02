@@ -12,13 +12,13 @@ protocol UserDefaultsProtocol {
     func integer(forKey defaultName: String) -> Int
 }
 
+extension UserDefaults: UserDefaultsProtocol {}
+
 class ViewController: UIViewController {
     
     @IBOutlet private(set) var counterLabel: UILabel!
     @IBOutlet private(set) var incrementButton: UIButton!
     var userDefaults: UserDefaultsProtocol = UserDefaults.standard
-    private static var allInstances = 0
-    private let instance: Int
     
 //    init(){
 //        super.init()
@@ -27,26 +27,15 @@ class ViewController: UIViewController {
 //        print(">> MyClass.init() #\(instance)")
 //    }
     
-    deinit {
-        print(">> MyClass.deinit #\(instance)")
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     private var count = 0 {
-        didSet {
-            counterLabel.text = "\(count)"
-            userDefaults.set(count, forKey: "count")
+            didSet {
+                counterLabel.text = "\(count)"
+                userDefaults.set(count, forKey: "count")
+            }
         }
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        ViewController.allInstances += 1
-        instance = ViewController.allInstances
-        print(">> MyClass.init() #\(instance)")
         count = userDefaults.integer(forKey: "count")
     }
     
@@ -56,4 +45,4 @@ class ViewController: UIViewController {
 
 }
 
-extension UserDefaults: UserDefaultsProtocol {}
+
