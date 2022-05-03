@@ -38,13 +38,13 @@ class ViewControllerTests: XCTestCase {
         XCTAssertEqual(sut.counterLabel.text, "0")
         }
     
-    func test_viewDidLoad_with7InUserDefaults_shouldShow7InCounterLabel() {
-        defaults.integers = ["count" : 7]
-        
-        sut.loadViewIfNeeded()
-        
-        XCTAssertEqual(sut.counterLabel.text, "7")
-    }
+//    func test_viewDidLoad_with7InUserDefaults_shouldShow7InCounterLabel() {
+//        defaults.integers = ["count" : 7]
+//
+//        sut.loadViewIfNeeded()
+//
+//        XCTAssertEqual(sut.counterLabel.text, "7")
+//    }
     
     func test_tappingButton_with12InUserDefaults_shouldWrite13ToUserDefaults() {
         defaults.integers = ["count" : 12]
@@ -53,6 +53,32 @@ class ViewControllerTests: XCTestCase {
         tap(sut.incrementButton)
         
         XCTAssertEqual(defaults.integers["count"], 13)
+    }
+    
+    func test_viewDidLoad_with7InUserDefaults_shouldShow7InCounterLabel() {
+        defaults.integers = ["count" : 7]
+        
+        sut.loadViewIfNeeded()
+        
+        XCTAssertEqual(sut.counterLabel.text, "7")
+    }
+    
+    func test_tappingButton_with12InUsserDefaults_shouldWrite13ToUserDefaults() {
+        defaults.integers = ["count" : 12]
+        sut.loadViewIfNeeded()
+        
+        tap(sut.incrementButton)
+        
+        XCTAssertEqual(defaults.integers["count"], 13)
+    }
+    
+    func test_tappingButton_with42InUserDefaults_shouldShow43InCounterLabel() {
+        defaults.integers = ["count" : 42]
+        sut.loadViewIfNeeded()
+        
+        tap(sut.incrementButton)
+        
+        XCTAssertEqual(sut.counterLabel.text, "43")
     }
     
 }
