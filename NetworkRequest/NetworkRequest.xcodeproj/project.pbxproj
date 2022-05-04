@@ -13,8 +13,9 @@
 		0DA8E3722820D9120029523F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DA8E3702820D9120029523F /* Main.storyboard */; };
 		0DA8E3742820D9150029523F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DA8E3732820D9150029523F /* Assets.xcassets */; };
 		0DA8E3772820D9150029523F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DA8E3752820D9150029523F /* LaunchScreen.storyboard */; };
-		0DA8E3822820D9160029523F /* NetworkRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA8E3812820D9160029523F /* NetworkRequestTests.swift */; };
 		0DA8E39B2820E09D0029523F /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA8E39A2820E09D0029523F /* MockURLSession.swift */; };
+		0DA8E39D2820E1E10029523F /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA8E39C2820E1E10029523F /* ViewControllerTests.swift */; };
+		0DA8E39F2820E3640029523F /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA8E39E2820E3640029523F /* TestHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +38,9 @@
 		0DA8E3762820D9150029523F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DA8E3782820D9150029523F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DA8E37D2820D9150029523F /* NetworkRequestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DA8E3812820D9160029523F /* NetworkRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestTests.swift; sourceTree = "<group>"; };
 		0DA8E39A2820E09D0029523F /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		0DA8E39C2820E1E10029523F /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		0DA8E39E2820E3640029523F /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,9 @@
 		0DA8E3802820D9160029523F /* NetworkRequestTests */ = {
 			isa = PBXGroup;
 			children = (
-				0DA8E3812820D9160029523F /* NetworkRequestTests.swift */,
 				0DA8E39A2820E09D0029523F /* MockURLSession.swift */,
+				0DA8E39C2820E1E10029523F /* ViewControllerTests.swift */,
+				0DA8E39E2820E3640029523F /* TestHelpers.swift */,
 			);
 			path = NetworkRequestTests;
 			sourceTree = "<group>";
@@ -211,8 +214,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DA8E39D2820E1E10029523F /* ViewControllerTests.swift in Sources */,
 				0DA8E39B2820E09D0029523F /* MockURLSession.swift in Sources */,
-				0DA8E3822820D9160029523F /* NetworkRequestTests.swift in Sources */,
+				0DA8E39F2820E3640029523F /* TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
